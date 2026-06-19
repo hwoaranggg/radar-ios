@@ -12,36 +12,43 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Select Xcode
-        run: sudo xcode-select -s /Applications/Xcode_16.2.app
+      # Диагностика: показываем, что реально лежит в репозитории и какой Xcode доступен.
+      # Если сборка опять сломается — в этом шаге будет видно, чего не хватает.
+      - name: Show repo structure
+        run: |
+          echo "=== Корень репозитория ==="
+          ls -la
+          echo ""
+          echo "=== Ищем .xcodeproj ==="
+          find . -name "*.xcodeproj" -maxdepth 4
+          echo ""
+          echo "=== Доступные версии Xcode ==="
+          ls /Applications | grep Xcode
 
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -s /Applications/Xcode.app
+          xcodebuild -version
+
+      # Без || true — если сборка упадёт, шаг покажет КРАСНЫЙ крестик с настоящей ошибкой
       - name: Build for Simulator
         run: |
           xcodebuild \
-            -project RevieTerminal.xcodeproj \
-            -scheme RevieTerminal \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
-            -configuration Debug \
-            CODE_SIGNING_ALLOWED=NO \
-            build \
-            | xcpretty || true
-
-      - name: Archive app
-        run: |
-          xcodebuild \
-            -project RevieTerminal.xcodeproj \
+            -project RevieTerminal/RevieTerminal.xcodeproj \
             -scheme RevieTerminal \
             -destination 'generic/platform=iOS Simulator' \
             -configuration Debug \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO \
-            build \
-            | xcpretty || true
+            build
+
+      - name: Show build output location
+        run: find build -name "*.app" -maxdepth 6
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
           name: RevieTerminal-Simulator
           path: build/Build/Products/Debug-iphonesimulator/RevieTerminal.app
-          if-no-files-found: warn
+          if-no-files-found: error
           retention-days: 7
