@@ -1,0 +1,353 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE84C8E7B13BEA749667FD0C /* RevieTerminalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062BDA148D894A6E66F584AD /* RevieTerminalApp.swift */; };
+		5758A06DB30C418F1270F3FD /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE8C08201CFD9C53CD4D19B /* AuthService.swift */; };
+		C4901B54DB23F20F849DB6C4 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63A43BD7553C2FD8FD27AEE /* APIClient.swift */; };
+		30FC41779E77B39EDB460274 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60CA50C630FED4F2358E781 /* AppConfig.swift */; };
+		688C4B08554BBA9A4E083478 /* SSEClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673B696ED1C9275084EA49D4 /* SSEClient.swift */; };
+		D76981583728A291E595355C /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A0C36AABF9CE10D1C3273 /* Keychain.swift */; };
+		B417E2A2C8576538F0FB812B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7406BFB9EE3298CDBD69E762 /* LoginView.swift */; };
+		30E2373EEF2BC6532310E5BA /* PulseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EC5E4DA30C6CFF66C2B745 /* PulseView.swift */; };
+		7C2CFA1E227952C96B5BAB2E /* PulseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169D774E570325BFC8B6EF6B /* PulseViewModel.swift */; };
+		7D876F62409B05B52FDF39E6 /* TokenCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5245C2580D3B7CD87487D456 /* TokenCard.swift */; };
+		4B3703EBB12F38A248887E09 /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30E11EE97A0772E214B3061 /* APIModels.swift */; };
+		43BB46174E3311836916CC39 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D6F4CE199F1204B21B1E8 /* Token.swift */; };
+		5708467A9A247CD46516957D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23C355DAE64FD7A3702E7BE /* Theme.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5BF48AA40CAD7891EB709FC /* RevieTerminal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevieTerminal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		062BDA148D894A6E66F584AD /* RevieTerminalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevieTerminalApp.swift; sourceTree = "<group>"; };
+		ABE8C08201CFD9C53CD4D19B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		D63A43BD7553C2FD8FD27AEE /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		E60CA50C630FED4F2358E781 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		673B696ED1C9275084EA49D4 /* SSEClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSEClient.swift; sourceTree = "<group>"; };
+		EF1A0C36AABF9CE10D1C3273 /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		7406BFB9EE3298CDBD69E762 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		02EC5E4DA30C6CFF66C2B745 /* PulseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseView.swift; sourceTree = "<group>"; };
+		169D774E570325BFC8B6EF6B /* PulseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseViewModel.swift; sourceTree = "<group>"; };
+		5245C2580D3B7CD87487D456 /* TokenCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenCard.swift; sourceTree = "<group>"; };
+		C30E11EE97A0772E214B3061 /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		EE5D6F4CE199F1204B21B1E8 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		C23C355DAE64FD7A3702E7BE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		770C5B730A8FBE3C009C5372 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29B2D46AA747A59804D46E1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B731CEFC6751AAE0EC69B98 = {
+			isa = PBXGroup;
+			children = (
+				D8DBA3F9900DD17689CA0C4D /* RevieTerminal */,
+				A8CBE22D73EBCC4E5F27B59C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A8CBE22D73EBCC4E5F27B59C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5BF48AA40CAD7891EB709FC /* RevieTerminal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8DBA3F9900DD17689CA0C4D /* RevieTerminal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RevieTerminal;
+			sourceTree = "<group>";
+		};
+		D1D0524B025E57AFFF263442 = {
+			isa = PBXGroup;
+			children = (
+				062BDA148D894A6E66F584AD /* RevieTerminalApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		35D315DEBBF45F223B169A61 = {
+			isa = PBXGroup;
+			children = (
+				CCA7F2C0B765592BBE489BB1 /* Auth */,
+				C713FD5D7EA45D079BEF0378 /* Networking */,
+				BF85A818CBD222B5A13A22CF /* Storage */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CCA7F2C0B765592BBE489BB1 = {
+			isa = PBXGroup;
+			children = (
+				ABE8C08201CFD9C53CD4D19B /* AuthService.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C713FD5D7EA45D079BEF0378 = {
+			isa = PBXGroup;
+			children = (
+				D63A43BD7553C2FD8FD27AEE /* APIClient.swift */,
+				E60CA50C630FED4F2358E781 /* AppConfig.swift */,
+				673B696ED1C9275084EA49D4 /* SSEClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		BF85A818CBD222B5A13A22CF = {
+			isa = PBXGroup;
+			children = (
+				EF1A0C36AABF9CE10D1C3273 /* Keychain.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		984D844B917CCD4C29DE2A97 = {
+			isa = PBXGroup;
+			children = (
+				449D9955D41B727CBAD87A2C /* Auth */,
+				DC3933B3F44764B8EF841472 /* Pulse */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		449D9955D41B727CBAD87A2C = {
+			isa = PBXGroup;
+			children = (
+				7406BFB9EE3298CDBD69E762 /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		DC3933B3F44764B8EF841472 = {
+			isa = PBXGroup;
+			children = (
+				02EC5E4DA30C6CFF66C2B745 /* PulseView.swift */,
+				169D774E570325BFC8B6EF6B /* PulseViewModel.swift */,
+				5245C2580D3B7CD87487D456 /* TokenCard.swift */,
+			);
+			path = Pulse;
+			sourceTree = "<group>";
+		};
+		A1C86A29E589D48EC70B6A32 = {
+			isa = PBXGroup;
+			children = (
+				C30E11EE97A0772E214B3061 /* APIModels.swift */,
+				EE5D6F4CE199F1204B21B1E8 /* Token.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		887A6F90336FF23D95C3914B = {
+			isa = PBXGroup;
+			children = (
+				C23C355DAE64FD7A3702E7BE /* Theme.swift */,
+				770C5B730A8FBE3C009C5372 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D /* RevieTerminal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFC8F565CE544D8F2242B7B0 /* Build configuration list for PBXNativeTarget "RevieTerminal" */;
+			buildPhases = (
+				E7209FB05162B7572F88D05E /* Sources */,
+				29B2D46AA747A59804D46E1F /* Frameworks */,
+				66F8606E9F0A136E2228EBCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RevieTerminal;
+			productName = RevieTerminal;
+			productReference = F5BF48AA40CAD7891EB709FC /* RevieTerminal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = D8A288FA6AAB62309EC7880E /* Build configuration list for PBXProject "RevieTerminal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B731CEFC6751AAE0EC69B98;
+			productRefGroup = A8CBE22D73EBCC4E5F27B59C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* RevieTerminal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		66F8606E9F0A136E2228EBCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7209FB05162B7572F88D05E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE84C8E7B13BEA749667FD0C /* RevieTerminalApp.swift in Sources */,
+				5758A06DB30C418F1270F3FD /* AuthService.swift in Sources */,
+				C4901B54DB23F20F849DB6C4 /* APIClient.swift in Sources */,
+				30FC41779E77B39EDB460274 /* AppConfig.swift in Sources */,
+				688C4B08554BBA9A4E083478 /* SSEClient.swift in Sources */,
+				D76981583728A291E595355C /* Keychain.swift in Sources */,
+				B417E2A2C8576538F0FB812B /* LoginView.swift in Sources */,
+				30E2373EEF2BC6532310E5BA /* PulseView.swift in Sources */,
+				7C2CFA1E227952C96B5BAB2E /* PulseViewModel.swift in Sources */,
+				7D876F62409B05B52FDF39E6 /* TokenCard.swift in Sources */,
+				4B3703EBB12F38A248887E09 /* APIModels.swift in Sources */,
+				43BB46174E3311836916CC39 /* Token.swift in Sources */,
+				5708467A9A247CD46516957D /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EFB7015A6DBA9BDD373E83BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			};
+			name = Debug;
+		};
+		E6ECEAAD007F6AE7CA886652 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A4B61F393217E7B16932178 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RevieTerminal/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revie.terminal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ENABLE_PREVIEWS = YES;
+			};
+			name = Debug;
+		};
+		FCA771F9C0AA620DD0AA461F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_ASSET_SYMBOLS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = RevieTerminal/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revie.terminal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				ENABLE_PREVIEWS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8A288FA6AAB62309EC7880E /* Build configuration list for PBXProject "RevieTerminal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB7015A6DBA9BDD373E83BE /* Debug */,
+				E6ECEAAD007F6AE7CA886652 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFC8F565CE544D8F2242B7B0 /* Build configuration list for PBXNativeTarget "RevieTerminal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A4B61F393217E7B16932178 /* Debug */,
+				FCA771F9C0AA620DD0AA461F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}
