@@ -12,15 +12,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Диагностика: показываем, что реально лежит в репозитории и какой Xcode доступен.
-      # Если сборка опять сломается — в этом шаге будет видно, чего не хватает.
       - name: Show repo structure
         run: |
           echo "=== Корень репозитория ==="
           ls -la
           echo ""
           echo "=== Ищем .xcodeproj ==="
-          find . -name "*.xcodeproj" -maxdepth 4
+          find . -name "*.xcodeproj" -maxdepth 5
           echo ""
           echo "=== Доступные версии Xcode ==="
           ls /Applications | grep Xcode
@@ -30,7 +28,7 @@ jobs:
           sudo xcode-select -s /Applications/Xcode.app
           xcodebuild -version
 
-      # Без || true — если сборка упадёт, шаг покажет КРАСНЫЙ крестик с настоящей ошибкой
+      # Путь подстроен под твою структуру: radar-ios/RevieTerminal/RevieTerminal.xcodeproj
       - name: Build for Simulator
         run: |
           xcodebuild \
